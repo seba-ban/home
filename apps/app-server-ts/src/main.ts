@@ -10,7 +10,7 @@ app.use(morgan('dev'));
 const getTags = (tagIds: number[]) =>
   new Promise<Tag[]>((resolve, reject) => {
     const client = new TagsServiceClient(
-      `localhost:50052`,
+      `localhost:50050`,
       grpc.credentials.createInsecure()
     );
 

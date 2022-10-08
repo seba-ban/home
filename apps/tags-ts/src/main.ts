@@ -10,7 +10,7 @@ import {
   Op,
 } from 'sequelize';
 
-const PORT = 50052;
+const PORT = 50050;
 
 const sequelize = new Sequelize({
   dialect: 'postgres',

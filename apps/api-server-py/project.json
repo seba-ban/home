@@ -1,0 +1,13 @@
+{
+    "root": "apps/api-server-py",
+    "projectType": "application",
+    "targets": {
+      "serve": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "poetry run uvicorn api_server_py.main:app --reload",
+          "cwd": "apps/api-server-py"
+        }
+      }
+    }
+  }

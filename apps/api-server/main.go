@@ -16,17 +16,13 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 )
 
-type server struct {
-	pb.UnimplementedTagsServiceServer
-}
-
 func Hello(name string) string {
 	result := "Hello " + name
 	return result
 }
 
 func getTags(ids *[]int32) (error, []*pb.Tag) {
-	conn, err := grpc.Dial("localhost:"+fmt.Sprint(50051), grpc.WithTransportCredentials(insecure.NewCredentials()))
+	conn, err := grpc.Dial("localhost:"+fmt.Sprint(50050), grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
 		log.Fatalf("did not connect: %v", err)
 	}
