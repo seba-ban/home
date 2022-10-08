@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@home/proto/*": ["libs/proto/proto_typescript/*"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

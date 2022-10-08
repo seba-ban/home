@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "tags-py"
+version = "0.1.0"
+description = ""
+authors = ["Sebastian Banaszkiewicz <banaszkiewicz.sebastian@gmail.com>"]
+packages = [{include = "tags_py"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+home_proto = {path="../../libs/proto"}
+sqlmodel = "^0.0.8"
+asyncpg = "^0.26.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

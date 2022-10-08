@@ -8,12 +8,39 @@
     "test": "nx test"
   },
   "private": true,
-  "dependencies": {},
   "devDependencies": {
-    "nx": "14.8.3",
     "@nrwl/cli": "14.8.3",
+    "@nrwl/eslint-plugin-nx": "14.8.3",
+    "@nrwl/jest": "14.8.3",
+    "@nrwl/js": "^14.8.3",
+    "@nrwl/linter": "14.8.3",
+    "@nrwl/node": "^14.8.3",
     "@nrwl/workspace": "14.8.3",
-    "typescript": "~4.8.2",
-    "prettier": "^2.6.2"
+    "@nx-go/nx-go": "^2.6.0",
+    "@types/jest": "28.1.1",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "~8.15.0",
+    "eslint-config-prettier": "8.1.0",
+    "jest": "28.1.1",
+    "jest-environment-jsdom": "28.1.1",
+    "nx": "14.8.3",
+    "prettier": "^2.6.2",
+    "ts-jest": "28.0.5",
+    "ts-node": "10.9.1",
+    "ts-proto": "^1.126.1",
+    "typescript": "~4.8.2"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.7.1",
+    "express": "^4.18.1",
+    "helmet": "^6.0.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.24.0",
+    "tslib": "^2.3.0"
   }
 }

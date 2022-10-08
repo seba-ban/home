@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "home_proto"
+version = "0.1.0"
+description = ""
+authors = ["Sebastian Banaszkiewicz <banaszkiewicz.sebastian@gmail.com>"]
+packages = [{include="./proto_python"}]
+
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+grpcio = "^1.49.1"
+grpcio-tools = "^1.49.1"
+protoletariat = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

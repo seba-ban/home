@@ -1,0 +1,22 @@
+syntax = "proto3";
+package tags;
+
+option go_package = "github.com/seba-ban/home/proto/tags";
+
+message Tag {
+  int32 id = 1;
+  string name = 2;
+  string description = 3;
+}
+
+message GetTagRequest {
+  int32 tagId = 1;
+}
+
+message GetTagResponse {
+  repeated Tag tags = 1;
+}
+
+service TagsService {
+  rpc GetTag (GetTagRequest) returns (GetTagResponse) {}
+}
